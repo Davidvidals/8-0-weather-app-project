@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script defer src='script.js'></script>
+    <link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+    <div id='main'>
+        <div id='header'>
+            <h1 class ='title'>Weather App</h1>
+            <form id='newButton' >
+                
+              <label id ='location-title'for="location" > Pick a Location: </label>
+                <input type="text" id="location" type ='submit' name="location">
+                <!-- <button id='get-weather' type="submit">Get Weather</button>  -->
+                <input type='submit' value='Get Weather'>
+            </form>
+           
+        </div>
+        <div class='display'>
+            <div>Choose a Location to View the Weather.</div>
+        </div>
+        <div class='history'>
+            <h4>Previous Searches</h4>
+            <ul id='history-list'>
+
+            </ul>
+        </div>
+        <div id='days'>
+            <div id='days-list'>
+                <div class='days-item'>
+                    <div>Today</div>
+                </div>
+                <div class='days-item'>
+                    <div>Tomorrow</div>
+                </div>
+                <div class='days-item'>
+                    <div>Day After Tomorrow</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

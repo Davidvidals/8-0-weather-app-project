@@ -1,0 +1,63 @@
+#main{
+    display:grid;
+    grid-template-areas: 
+    "header header header"
+    "info info searches"
+    "days days searches";
+    grid-gap:5px;
+    max-width: 800px;
+    width:75%;
+    margin: 0 auto;
+}
+
+#main > *{
+   
+    padding: 20px 40px;
+}
+
+#header{
+    grid-area: header;
+    text-align: center;
+    background-color: teal;
+    border: 2px solid black;
+
+}
+
+.location-title{
+    color: white;
+}
+
+.title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.display{
+    grid-area: info;
+    background-color: lightgrey;
+    border: 2px solid teal;
+    text-align: center;
+}
+
+.history{
+    grid-area: searches;
+    text-align: left;
+}
+
+#days{
+    grid-area: days;
+    border: 1px solid black;
+   
+
+}
+
+#days , #days-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+#days-item{
+    text-align: center;
+    
+}
